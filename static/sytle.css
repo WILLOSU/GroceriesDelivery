@@ -1,16 +1,209 @@
 /*Limpar formatações padrão*/
 
-*{
-   margin: 0;
-   padding: 0;
+*
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-body{
-    font-size: 1em;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem;
 }
 
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.main-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.main-nav ul li {
+  margin-left: 1.5rem;
+}
+
+.main-nav ul li:first-child {
+  margin-left: 0;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+  color: #333;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.login-register {
+  text-decoration: none;
+  color: #23A6F0;
+  margin-right: 1rem;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: #23A6F0;
+}
+
+.icon-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #666;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+      flex-wrap: wrap;
+  }
+
+  .main-nav, .header-actions {
+      width: 100%;
+      order: 2;
+      display: none;
+  }
+
+  .main-nav.active, .header-actions.active {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .main-nav ul {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .main-nav ul li {
+      margin: 0;
+      padding: 0.5rem 0;
+  }
+
+  .header-actions {
+      margin-top: 1rem;
+  }
+
+  .menu-toggle {
+      display: block;
+      order: 1;
+  }
+
+  h1 {
+      order: 0;
+  }
+}
+
+/* adaptação para mobile */
+
+@media (max-width: 1024px) {
+  .header-content {
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .main-nav, .header-actions {
+      display: none;
+      width: 100%;
+      order: 2;
+  }
+
+  .main-nav.active, .header-actions.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 0;
+  }
+
+  .main-nav ul {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+
+  .main-nav ul li {
+      margin: 0.5rem 0;
+      width: 100%;
+      text-align: center;
+  }
+
+  .main-nav ul li a {
+      display: block;
+      padding: 0.5rem 0;
+  }
+
+  .header-actions {
+      margin-top: 1rem;
+      justify-content: center;
+  }
+
+  .header-actions .login-register {
+      margin-bottom: 0.5rem;
+  }
+
+  .menu-toggle {
+      display: block;
+      order: 1;
+      font-size: 1.8rem;
+      padding: 0.5rem;
+      margin-left: 1rem;
+  }
+
+  h1 {
+      order: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content {
+      padding: 0.5rem;
+  }
+
+  h1 {
+      font-size: 1.2rem;
+  }
+
+  .icon-button svg {
+      width: 18px;
+      height: 18px;
+  }
+
+  .login-register {
+      font-size: 0.9rem;
+  }
+}
 
 
 
@@ -35,3 +228,63 @@ body{
     content: "\f0e0 ";
     font-family: FontAwesome;
   }
+
+  /* RODAPÉ */
+
+  footer {
+    background-color: #252b41; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: none;
+}
+
+
+th {
+    text-align: left;
+}
+
+.fas {
+    color: #fff; /* Cor dos ícones */
+}
+
+button {
+    background-color: #00a6ec; /* Cor do botão */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding-left: 20px;
+}

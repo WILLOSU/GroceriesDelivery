@@ -4,38 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/sytle.css">
-    <link rel="icon" type='image/png' href="../static/img/logoSite.PNG"
+    <link rel="icon" type='image/png' href="../static/img/logoSite.PNG">
 
     <title></title>
 </head>
 <body>
-    <header>
-        <section class="header-content">
+    <div class="header-content">
+        <!-- Logo -->
+        <div id="navbar-brand">
             <h1>Bandage</h1>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#shop">Shop</a></li>
-                    <li><a href="#about">Blog</a></li>
-                    <li><a href="#contato">Contact</a></li>
-                    <li><a href="#Pages">Pages</a></li>
-                </ul>
-            </nav>
-            <section class="header-actions">
-                <a href="#login" class="login-register">Login / Register</a>
-                <button class="icon-button" aria-label="Search">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                </button>
-                <button class="icon-button" aria-label="Cart">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-                </button>
-                <button class="icon-button" aria-label="Favorites">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-                </button>
-            </section>
-            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-        </section>
-    </header>
+        </div>
+
+        <!-- Navegação principal -->
+        <nav class="main-nav">
+            <ul class="ulHeader">
+              <li class="liHeader"><a class="aHeader" href="#home">Home</a></li>
+              <li class="liHeader"><a class="aHeader" href="#shop">Shop</a></li> 
+              <li class="liHeader"><a class="aHeader" href="#about">About</a></li>
+              <li class="liHeader"><a class="aHeader" href="#blog">Blog</a></li>
+              <li class="liHeader"><a class="aHeader" href="#contact">Contact</a></li>
+              <li class="liHeader"><a class="aHeader" href="#contact">Pages</a></li>
+              
+            </ul>
+          </nav>
+          
+          
+
+        <!-- Ícones de pesquisa, carrinho e coração -->
+        <div class="icons">
+            <img src="../static/img/login.png" alt="login" class="icon iconLogin">
+            <img src="../static/img/lupa.png" alt="Ícone de busca" class="iconHeader">
+            <img src="../static/img/carrinho.png" alt="Ícone de carrinho" class="iconHeader">
+            <img src="../static/img/coracao.png" alt="Ícone de coração" class="iconHeader">
+        </div>
+    </div>
+</header>
 
     <main>
         
@@ -44,69 +47,84 @@
     <!-- Rodapé -->
     <body>
         <footer>
-            <table>
-                <tr>
-                    <td colspan="2">
-                        <h2 class="title">Consulting Agency For Your Business</h2>
-                        <p class="subtitle">the quick fox jumps over the lazy dog</p>
-                        <br>
-                        <br>
-                    </td>
-                </tr>
-                </tr>
-                <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>Company Info</li><br>
-                            <li>About Us</li><br>
-                            <li>Carrier</li><br>
-                            <li>We are hiring</li><br>
-                            <li>Blog</li><br>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Legal</li><br>
-                            <li>About Us</li><br>
-                            <li>Carrier</li><br>
-                            <li>We are hiring</li><br>
-                            <li>Blog</li><br>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Features</li><br>
-                            <li>Business Marketing</li><br>
-                            <li>User Analytic</li><br>
-                            <li>Live Chat</li><br>
-                            <li>Unlimited Support</li><br>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Resources</li><br>
-                            <li>IOS & Android</li><br>
-                            <li>Watch a Demo</li><br>
-                            <li>Customers</li><br>
-                            <li>API</li><br>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li><i>Get In Touch</li><br>
-                            <li><i class="fas fa-phone"></i> (480) 555-0103</li><br>
-                            <li><i class="fas fa-map-marker-alt"></i> 4517 washington Ave.</li><br>
-                            <li><i class="fas fa-envelope"></i> debra.holt@example.com</li><br>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </footer>
-        <script src="js/app.js"></script>
-    </body>
-    </html>
+            <div class="container">
+              <div class="layout">
+                <div class="row">
+                  <div class="text-content">
+                    <h3 class="title">Consulting Agency For Your Business</h3><br>
+                    <p class="subtitle">the quick fox jumps over the lazy dog</p>
+                  </div>
+                  <div class="button-layout">
+                    <button class="btn primary-color">Contact Us</button>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Segundo Container -->
+              <div class="row">
+                <div class="col-md-2">
+                  <h4>Company Info</h4><br>
+                  <ul>
+                    <li>About Us</li><br>
+                    <li>Carrier</li><br>
+                    <li>We are hiring</li><br>
+                    <li>Blog</li><br>
+                  </ul>
+                </div>
+                <div class="col-md-2">
+                  <h4>Legal</h4><br>
+                  <ul>
+                    <li>About Us</li><br>
+                    <li>Carrier</li><br>
+                    <li>We are hiring</li><br>
+                    <li>Blog</li><br>
+                  </ul>
+                </div>
+                <div class="col-md-2">
+                  <h4>Features</h4><br>
+                  <ul>
+                    <li>Business Marketing</li><br>
+                    <li>User Analytic</li><br>
+                    <li>Live Chat</li><br>
+                    <li>Unlimited Support</li><br>
+                  </ul>
+                </div>
+                <div class="col-md-2">
+                  <h4>Resources</h4><br>
+                  <ul>
+                    <li>iOS & Android</li><br>
+                    <li>Watch a Demo</li><br>
+                    <li>Customers</li><br>
+                    <li>API</li><br>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <h4>Get In Touch</h4><br>
+                  <ul>
+                    <li><img src="../static/img/bx_bx-phone.png"alt="Phone Icon ">   (480) 555-0103</li><br>
+                    <li><img src="../static/img/Vector.png" alt="Address Icon "> 4517 Washington Ave.</li><br>
+                    <li><img src="../static/img/carbon_send-alt.png" alt="Email Icon "> debra.holt@example.com</li><br>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Terceiro Container -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Made With Love By Figmaland All Right Reserved</h4>
+      </div>
+      
+            <div class="social-icons">
+              <a href="#" class="social-icons"><img src="../static/img/facebook.png" alt="Facebook"></a>
+              <a href="#" class="social-icons"><img src="../static/img/instagram.png" alt="Instagram"></a>
+              <a href="#" class="social-icons"><img src="../static/img/twitter.png" alt="Twitter"></a>
+        
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

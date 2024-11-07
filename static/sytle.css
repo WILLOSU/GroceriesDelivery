@@ -1,290 +1,329 @@
-/*Limpar formatações padrão*/
-
-*
-
-body {
+/* Resetando margens e preenchimento */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Estilos gerais para o cabeçalho */
 header {
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  padding: 1rem;
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
 }
 
+/* Estilo do conteúdo do cabeçalho */
 .header-content {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-h1 {
-  margin: 0;
-  font-size: 1.5rem;
-  color: #333;
+/* Logo */
+#navbar-brand h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #252B42;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 32px;
+  initial-letter: 0.1px;
+  padding: 0px 150px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
+/* Estilo da navegação */
 .main-nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav li {
+  position: relative;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #737373;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  initial-letter: 0.2px;
+  align-items: center;
+}
+
+.main-nav a:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+/* Dropdown */
+/* Estilos para o menu */
+.ulHeader {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
 
-.main-nav ul li {
-  margin-left: 1.5rem;
+.liHeader {
+  position: relative;
 }
 
-.main-nav ul li:first-child {
-  margin-left: 0;
-}
-
-.main-nav ul li a {
+.aHeader {
   text-decoration: none;
-  color: #666;
-  transition: color 0.3s ease;
+  padding: 10px;
+  color: #252B42;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
-.main-nav ul li a:hover {
-  color: #333;
-}
-
-.header-actions {
+/* Estilos dos ícones */
+.icons {
   display: flex;
-  align-items: center;
+  gap: 5px;
 }
 
-.login-register {
-  text-decoration: none;
-  color: #23A6F0;
-  margin-right: 1rem;
+.icon {
+  padding: 2px 0px;
+  width: 17px;
+  height: 17px;
 }
 
-.icon-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.5rem;
-  color: #23A6F0;
+.iconLogin {
+  width: 166px;
+  height: 54px;
 }
 
-.icon-button svg {
-  width: 20px;
-  height: 20px;
-}
-
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  color: #666;
-  cursor: pointer;
-}
-
+/* Responsividade */
 @media (max-width: 768px) {
+  /* Acomoda a navegação para telas menores */
   .header-content {
-      flex-wrap: wrap;
-  }
-
-  .main-nav, .header-actions {
-      width: 100%;
-      order: 2;
-      display: none;
-  }
-
-  .main-nav.active, .header-actions.active {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
   }
 
   .main-nav ul {
-      flex-direction: column;
-      width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
   }
 
-  .main-nav ul li {
-      margin: 0;
-      padding: 0.5rem 0;
+  .main-nav li {
+    width: 100%;
   }
 
-  .header-actions {
-      margin-top: 1rem;
+  #navbar-brand h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
   }
 
-  .menu-toggle {
-      display: block;
-      order: 1;
-  }
-
-  h1 {
-      order: 0;
-  }
-}
-
-/* adaptação para mobile */
-
-@media (max-width: 1024px) {
-  .header-content {
-      flex-wrap: wrap;
-      justify-content: space-between;
-  }
-
-  .main-nav, .header-actions {
-      display: none;
-      width: 100%;
-      order: 2;
-  }
-
-  .main-nav.active, .header-actions.active {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem 0;
-  }
-
-  .main-nav ul {
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-  }
-
-  .main-nav ul li {
-      margin: 0.5rem 0;
-      width: 100%;
-      text-align: center;
-  }
-
-  .main-nav ul li a {
-      display: block;
-      padding: 0.5rem 0;
-  }
-
-  .header-actions {
-      margin-top: 1rem;
-      justify-content: center;
-  }
-
-  .header-actions .login-register {
-      margin-bottom: 0.5rem;
-  }
-
-  .menu-toggle {
-      display: block;
-      order: 1;
-      font-size: 1.8rem;
-      padding: 0.5rem;
-      margin-left: 1rem;
-  }
-
-  h1 {
-      order: 0;
+  .iconHeader {
+    width: 15px;
+    height: 15px;
+    margin-right: 1px;
   }
 }
 
 @media (max-width: 480px) {
-  .header-content {
-      padding: 0.5rem;
+  /* Ajustes para dispositivos muito pequenos (como celulares) */
+  .main-nav a {
+    font-size: 16px;
   }
 
-  h1 {
-      font-size: 1.2rem;
+  #navbar-brand h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    color: #252B42;
   }
 
-  .icon-button svg {
-      width: 18px;
-      height: 18px;
-  }
-
-  .login-register {
-      font-size: 0.9rem;
+  .icon {
+    width: 36px;
+    height: 36px;
+   
   }
 }
 
 
 
-/* Icones */
-
-
-.icon {
-    margin-right: 10px;
-  }
-  
-  .icon.phone::before {
-    content: "\f095 ";
-    font-family: FontAwesome;
-  }
-  
-  .icon.location::before {
-    content: "\f041 ";
-    font-family: FontAwesome;
-  }
-  
-  .icon.email::before {
-    content: "\f0e0 ";
-    font-family: FontAwesome;
-  }
-
-  /* RODAPÉ */
-
-  footer {
-    background-color: #252b41; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-    padding: 20px;
+/* Estilo do footer */
+footer {
+  background-color: #252B42;
+  color: #fff;
+  padding: 0px 150px;
+  font-family: 'Montserrat', sans-serif;
+  width: auto;
+  height: auto;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+/* Estilo da container principal */
+.container {
+  width: 100%;  /* Largura total da tela */
+  max-width: 1440px;  /* Limita a largura máxima */
+  margin-left: 0;  /* Remove qualquer margem à esquerda */
+  margin-right: 0;  /* Remove qualquer margem à direita */
+  padding-top: 50px;  /* Distância do topo */
+  padding-bottom: 50px;
 }
 
-th, td {
-    padding: 10px;
-    border: none;
+/* Layout */
+.layout {
+  width: 100%;
+  height: 272px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;  /* Adiciona flex-direction para a estrutura vertical */
+  gap: 10px;  /* Espaçamento entre as linhas */
+  margin-left: 100;  /* Remove qualquer margem à esquerda */
+  margin-right: 0;  /* Remove qualquer margem à direita */
 }
 
-
-th {
-    text-align: left;
+/* Primeira Linha - Texto e Botão */
+.row {
+  display: flex;
+  justify-content: space-between;  /* Espaçamento entre os itens da linha */
+  align-items: center;  /* Alinha os itens verticalmente */
+  width: 100%;  /* Garante que a linha ocupe toda a largura */
 }
 
-.fas {
-    color: #fff; /* Cor dos ícones */
+.row:first-of-type {
+  margin-bottom: 20px; /* Ajuste o espaçamento entre o primeiro e o segundo container */
 }
 
-button {
-    background-color: #00a6ec; /* Cor do botão */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+.row:nth-of-type(2) {
+  margin-top: 0; /* Reduz o espaçamento na segunda linha, se necessário */
 }
 
-p {
-    text-align: center;
+.text-content {
+  max-width: 50%;  /* Define uma largura máxima para o texto */
 }
 
-.title {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: left;
+.button-layout {
+  display: flex;
+  justify-content: flex-start;  /* Alinha o botão à esquerda */
+  margin-bottom: 20px;
 }
 
-.subtitle {
+.btn.primary-color {
+  width: 160px;  /* Largura ajustável */
+  height: 52px;
+  background-color: #23A6F0;  /* Cor primária */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn.primary-color:hover {
+  background-color: #1c8fcd; /* Sombra mais escura para efeito de hover */
+}
+
+/* Colunas */
+.col-md-2 {
+  width: 148px;  /* Largura fixa */
+  height: 170px;  /* Altura fixa */
+  justify-content: flex-start; /* Alinha o conteúdo horizontalmente à esquerda */
+  align-items: center;         /* Alinha o conteúdo verticalmente ao centro */
+}
+
+.col-md-4 {
+  width: 321px;  /* Largura fixa */
+  height: 152.5px;  /* Altura fixa */
+  justify-content: flex-start; /* Alinha o conteúdo horizontalmente à esquerda */
+  align-items: center;         /* Alinha o conteúdo verticalmente ao centro */
+}
+
+h4 {
   font-size: 16px;
   font-weight: bold;
-  text-align: left;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-td {
-  padding-left: 20px;
+ul li {
+  font-size: 14px;
+}
+
+/* Responsividade - Ajustes para dispositivos móveis */
+@media (max-width: 1024px) {
+  .layout {
+    flex-direction: column;  /* Organiza as colunas em uma única coluna */
+    align-items: center;  /* Centraliza as colunas */
+  }
+
+  .row {
+    flex-direction: column;  /* Organiza a linha em coluna no mobile */
+    align-items: center;  /* Centraliza os itens da linha */
+    margin-bottom: 0;  /* Remove o espaço extra entre as linhas */
+    gap: 20px; /* Ajuste o valor para o espaçamento entre colunas */
+  }
+
+  .col-md-2,
+  .col-md-4 {
+    width: 100%;  /* As colunas vão ocupar 100% da largura disponível */
+    height: auto;  /* A altura será ajustada automaticamente */
+    margin-bottom: 20px;  /* Espaçamento entre as colunas */
+  }
+
+  .text-content {
+    max-width: 100%;  /* Largura 100% para o conteúdo de texto */
+    margin-bottom: 10px;
+  }
+
+  .button-layout {
+    margin-top: 20px;  /* Adiciona um espaçamento para o botão */
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .col-md-2 {
+    width: 100%;  /* As colunas vão ocupar 100% da largura */
+    margin-bottom: 20px;
+  }
+
+  .col-md-4 {
+    width: 100%;  /* A última coluna também ocupa 100% */
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    font-size: 10px;  /* Reduz o tamanho da fonte nos títulos */
+  }
+
+  ul li {
+    font-size: 12px;  /* Reduz o tamanho da fonte nas listas */
+  }
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 18px;
 }

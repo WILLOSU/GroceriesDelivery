@@ -338,6 +338,7 @@ ul li {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  color: #252B42;
 }
 
 /* Carousel */
@@ -481,4 +482,137 @@ body {
       padding: 12px 30px;
       font-size: 14px;
   }
+}
+
+/* Card - Sorvete / Maça / Frango */
+
+
+.containerCard7 {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+  background-color: #FAFAFA;
+}
+
+.rowCard {
+  display: flex;
+  justify-content: space-between;
+  width: 1084px;
+  gap: 16px; /* Ajusta o espaço entre os cards */
+}
+
+/* Configurações para cada card */
+.col-md-4Card {
+  width: 332px;
+  height: 232px;
+  background-color: #FFFFFF;
+  border: 1px solid #ECECEC;
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+/* Conteúdo de texto */
+.text-container {
+  flex: 1;
+}
+
+.text-contentH6 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  margin: 0;
+}
+
+.text-contentH2 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #252B42;
+  margin: 8px 0 0 0;
+}
+
+/* Imagem ao lado do texto */
+.card-itemImg {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Responsividade */
+@media (max-width: 1080px) {
+  .rowCard {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .col-md-4Card {
+    width: 100%;
+    max-width: 332px;
+  }
+}
+
+/*Card Amarelo */
+
+.h5, .section-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  text-align: center;
+  color: #252B42;
+}
+
+.second-text-color {
+  color: #737373;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+/* Container Principal e Configuração de Layout */
+.primary-container {
+  width: 100%;
+  max-width: 658px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.flex-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Torna o layout responsivo */
+}
+
+.flex-col-lg-8, .content-main {
+  width: 100%;
+  max-width: 214px; /* Fixed para content-main */
+  height: auto; /* Hug */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+  .flex-col-lg-8 {
+      width: 100%; /* Em telas menores, ocupará 100% */
+  }
+}
+/* Título da seção */
+.section-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #252B42;
+  width: 200px;
+  margin: 0 auto 10px auto;
 }

@@ -72,6 +72,10 @@ Exportando imagens site GroceriesDelivery
 									Bottom		15px
 									Left		40px
 									Gap		    10px
+									
+									
+									primary-color
+                                    #23A6FO
 
 							
 						
@@ -95,6 +99,106 @@ carousel-item-png
 3 - foto maça
 
 4 - foto frango
+
+
+sktop-shop-cards-7
+
+	Width    1440px
+	Height   392px
+
+	Colors
+	light-gray-l
+	#FAFAFA
+	
+	
+		CONTANIER
+		Layout		
+		Width		Fixed (1,084px)
+		Height		Hug (392px)
+		Left		211px
+		Padding		
+		Top		    80px
+		Bottom		80px
+		
+		
+			ROW
+			Layout	
+			Width	Fixed (1,084px)
+			Height	Hug (232px)
+			Justify	space-between
+			
+			
+				cold-md-4
+				Width	332px
+				Height	232px
+
+		
+					card-item	
+					Layout	332px
+					Width	231px
+					Border  1px
+					
+					Colors
+					#FFFFFF
+					
+					Borders
+					Ipx
+					light-gray-2
+					#ECECEC
+					Outer alignment
+					
+						Text h6
+						
+						TEXTO YOUR SPACE		
+						Text h6		
+						Width		81px
+						Height		20px
+						Top		    46 px
+						Lett		27px
+								
+						Content		
+						Your Space		
+						Typography		
+						Name		paragraph
+						Font		Montserrat
+						Weight		400
+						Size		14px
+						Line height	20px
+						Letter		0.2px
+								
+						Colors		
+						second-text-color		
+						#737373		
+								
+								
+						TEXTO Unique Life		
+						Text h2		
+						Width		94px
+						Height		64PX
+						Top		83PX
+						Lett		27px
+								
+						Content		
+						Unique Life		
+						Typography		
+						Name		h3
+						Font		Montserrat
+						Weight		700
+						Size		24PX
+						Line height	32PX
+						Letter		0.1PX
+								
+						Colors		
+						text-color		
+						#252B42		
+								
+						E DO LADO DESTE TEXTO EXISTE UMA FOTO		
+
+				
+
+
+		
+		
 
 
 

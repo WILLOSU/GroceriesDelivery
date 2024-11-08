@@ -14,3 +14,12 @@ CTRL + SHIFT + F = identação de código HTML
 
 CTRL + J = abrir terminal
 
+https://bikego.com.br/
+
+# Comandos Git
+
+git status
+git add .
+git status
+git commit -m ""
+git push origin develop

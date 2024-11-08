@@ -1,0 +1,282 @@
+Exportando imagens site GroceriesDelivery
+
+1 - foto publicidade batata frita fundo vermelho -
+
+		shop-hero-3-product-slide-2.jpg
+		width 14.40px
+		heigth 640px
+
+		background: #00000059;
+		
+				container
+				Width	Hug (701px)
+                Height	Hug (554px)
+				Top	    76px
+				Lett	369px
+				Padding	
+				Top	    112px
+				Bottom	112px
+				Gap	    80px
+				
+					row
+					Width   Fixed (701px)
+					Height  Hug (330px)
+					
+					Text h1 #hedline2
+					Width   Fixed (658px)
+					Height  Hug (80px)
+					
+						content
+						GROCERIES DELIVERY
+						
+						Name	     h1
+						Font	     Montserrat
+						Weight	     700
+						Size	     58px
+						Line height	 80px
+						Letter	     0.2px
+						Align	    Center
+							
+						Colors	
+						light-text-color	
+						#FFFFFF	
+
+							Text h4
+							Width   536px
+					        Height  60px
+							
+							content
+						    We know how large objects will act, but things on a 
+                            small scale just do not act that way.
+							
+							Name	      h4
+							Font	      Montserrat
+							Weight	      400
+							Size	      20px
+							Line height	  30px
+							Letter	      0.2px
+							Align	      Center
+								
+							Colors	
+							light-text-color	
+							#FFFFFF	
+									
+									btn-lg-1
+									
+									Width		Hug (204px)
+									Height		Hug (62px)
+									Radius		5px
+									Padding		
+									Top		    15px
+									Right		40px
+									Bottom		15px
+									Left		40px
+									Gap		    10px
+
+							
+						
+					
+					        
+					
+
+
+
+
+carousel-item-png
+
+
+
+
+
+
+
+2 - foto tipo sorvete 
+
+3 - foto maça
+
+4 - foto frango
+
+
+
+5 - foto amarela
+
+
+
+6 - foto tipo sorvete 2
+
+7 - foto maça 2
+
+8 - foto frango 2
+
+
+9 - foto tipo sorvete 3
+
+10 - foto maça 3
+
+11 - foto frango 3
+
+
+
+12 - foto homem motoca
+
+13 - foto carne fresca
+
+
+
+14 - conteiner de publicidade 4
+
+15 - conteiner de titulo 
+
+
+
+16 - foto tipo sorvete 4
+
+17 - foto maça 4
+
+18 - foto frango 4
+
+
+
+19 - foto tipo sorvete 5
+
+20 - foto maça 5
+
+21 - foto frango 5
+
+
+22 - foto rosquinha rosa
+
+
+23 - foto minions
+
+24 - observar publicidades
+
+
+
+25 - mulher sanduiche
+
+
+
+26 - conteiner cabeçalho
+
+
+27 - pote azul
+
+28 - tablet
+
+29 - frasco branco
+
+30 - macarrão instaneo
+
+
+
+31 - conteiner marcas 6 imagens
+
+
+
+32 - conteiner título
+
+
+
+33 - foto cidade
+
+34 - foto fusca rosa
+
+35 - foto sobrinha
+
+
+
+
+2 - foto tipo sorvete 
+
+3 - foto maça
+
+4 - foto frango
+
+
+
+5 - foto amarela
+
+
+
+6 - foto tipo sorvete 2
+
+7 - foto maça 2
+
+8 - foto frango 2
+
+
+9 - foto tipo sorvete 3
+
+10 - foto maça 3
+
+11 - foto frango 3
+
+
+
+12 - foto homem motoca
+
+13 - foto carne fresca
+
+
+
+14 - conteiner de publicidade 4
+
+15 - conteiner de titulo 
+
+
+
+16 - foto tipo sorvete 4
+
+17 - foto maça 4
+
+18 - foto frango 4
+
+
+
+19 - foto tipo sorvete 5
+
+20 - foto maça 5
+
+21 - foto frango 5
+
+
+22 - foto rosquinha rosa
+
+
+23 - foto minions
+
+24 - observar publicidades
+
+
+
+25 - mulher sanduiche
+
+
+
+26 - conteiner cabeçalho
+
+
+27 - pote azul
+
+28 - tablet
+
+29 - frasco branco
+
+30 - macarrão instaneo
+
+
+
+31 - conteiner marcas 6 imagens
+
+
+
+32 - conteiner título
+
+
+
+33 - foto cidade
+
+34 - foto fusca rosa
+
+35 - foto sobrinha

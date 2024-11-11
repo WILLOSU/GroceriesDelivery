@@ -16,39 +16,52 @@
                 <h1>Bandage</h1>
             </div>
 
-        <!-- Navegação principal -->
-        <nav class="main-nav">
-            <ul class="ulHeader">
-              <li class="liHeader"><a class="aHeader" href="#home">Home</a></li>
-              <li class="liHeader"><a class="aHeader" href="#shop">Shop</a></li> 
-              <li class="liHeader"><a class="aHeader" href="#about">About</a></li>
-              <li class="liHeader"><a class="aHeader" href="#blog">Blog</a></li>
-              <li class="liHeader"><a class="aHeader" href="#contact">Contact</a></li>
-              <li class="liHeader"><a class="aHeader" href="#contact">Pages</a></li>
-            </ul>
-          </nav>
-        <!-- Ícones de pesquisa, carrinho e coração -->
-        <div class="icons">
-            <img src="../static/img/login.png" alt="login" class="icon iconLogin">
-            <img src="../static/img/lupa.png" alt="Ícone de busca" class="iconHeader">
-            <img src="../static/img/carrinho.png" alt="Ícone de carrinho" class="iconHeader">
-            <img src="../static/img/coracao.png" alt="Ícone de coração" class="iconHeader">
+            <!-- Navegação principal -->
+            <nav class="main-nav">
+                <ul class="ulHeader">
+                    <li class="liHeader"><a class="aHeader" href="#home">Home</a></li>
+                    <li class="liHeader"><a class="aHeader" href="#shop">Shop</a></li> 
+                    <li class="liHeader"><a class="aHeader" href="#about">About</a></li>
+                    <li class="liHeader"><a class="aHeader" href="#blog">Blog</a></li>
+                    <li class="liHeader"><a class="aHeader" href="#contact">Contact</a></li>
+                    <li class="liHeader"><a class="aHeader" href="#pages">Pages</a></li>
+                </ul>
+            </nav>
+
+            <!-- Ícones de pesquisa, carrinho e coração DESKTOP-->
+            <div class="icons">
+                <img src="../static/img/login.png" alt="login" class="icon iconLogin">
+                <img src="../static/img/lupa.png" alt="Ícone de busca" class="iconHeader">
+                <img src="../static/img/carrinho.png" alt="Ícone de carrinho" class="iconHeader">
+                <img src="../static/img/coracao.png" alt="Ícone de coração" class="iconHeader">
+            </div>
+
+            <!-- Ícones de pesquisa, carrinho e coração MOBILE-->
+            <div class="azul">
+                <div class="menu-icon">
+                    <img src="../static/img/lupaM.png" alt="lupaM">
+                    <img src="../static/img/carrinhoM.png" alt="carrinhoM">
+                    <img src="../static/img/hambuguer.png" alt="Hamburguer">
+                </div>
+            </div>
         </div>
-    </div>
-  </header>
-  <!-- carousel -->
-  <div class="carousel-container">
-         <div class="carousel">
-          </div>
-          <button class="carousel-button prev" aria-label="Slide anterior">&lt;</button>
-          <button class="carousel-button next" aria-label="Próximo slide">&gt;</button>
-          <div class="carousel-indicators">
-          </div>
-      </div>
+    </header>
+
     <main>
+        <!-- carousel -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <!-- Slides do carrossel serão inseridos aqui via JavaScript -->
+            </div>
+            <button class="carousel-button prev" aria-label="Slide anterior">&lt;</button>
+            <button class="carousel-button next" aria-label="Próximo slide">&gt;</button>
+            <div class="carousel-indicators">
+                <!-- Indicadores do carrossel serão inseridos aqui via JavaScript -->
+            </div>
+        </div>
+
         <!-- Cards -->
-          <!-- Sorvete -->
-          <div class="containerCard7">
+        <section class="containerCard7">
             <div class="rowCard">
                 <!-- Card 1 - Sorvete -->
                 <div class="col-md-4Card">
@@ -80,106 +93,238 @@
                     <img src="../static/img/frango.png" alt="Imagem de frango" class="card-itemImg">
                 </div>
             </div>
-        </div>
+        </section>
 
-           <!-- Containner Amarelo -->
+        <!-- Container Amarelo e Grid de Produtos -->
+        
+        <section class="product-section">
+            <div class="product-row">
+                
+                <!-- Sidebar (Card Amarelo) -->
+                <aside class="sidebar">
+                    <img src="../static/img/amarela.jpg" alt="Furniture Background" class="sidebar-image">
+                    <div class="sidebar-content">
+                        <h2>FURNITURE</h2>
+                        <p>5 Items</p>
+                    </div>
+                </aside>
+        
+                <!-- Main Content -->
+                <div class="main-content">
+                    <!-- Navigation -->
+                    <div class="nav-container">
+                        <h1 class="nav-title">BESTSELLER PRODUCTS</h1>
+                        <div class="nav-tabs">
+                            <span class="nav-tab active">Men</span>
+                            <span class="nav-tab">Women</span>
+                            <span class="nav-tab">Accessories</span>
+                        </div>
+                        <div class="nav-arrows">
+                            <button class="nav-arrow">&lt;</button>
+                            <button class="nav-arrow">&gt;</button>
+                        </div>
+                    </div>
+        
+                    <!-- Product Grid -->
+                    <div class="product-grid">
+                        <!-- Product Card 1 -->
+                        <div class="product-card">
+                            <img src="../static/img/sorvete.png" alt="Sorvete" class="product-image">
+                            <h3 class="product-title">Graphic Design</h3>
+                            <p class="product-department">English Department</p>
+                            <div class="product-price">
+                                <span class="price-old">$16.48</span>
+                                <span class="price-new">$6.48</span>
+                            </div>
+                        </div>
+        
+                        <!-- Product Card 2 -->
+                        <div class="product-card">
+                            <img src="../static/img/maca.png" alt="Maça" class="product-image">
+                            <h3 class="product-title">Graphic Design</h3>
+                            <p class="product-department">English Department</p>
+                            <div class="product-price">
+                                <span class="price-old">$16.48</span>
+                                <span class="price-new">$6.48</span>
+                            </div>
+                        </div>
+        
+                        <!-- Product Card 3 -->
+                        <div class="product-card">
+                            <img src="../static/img/frango.png" alt="Frango" class="product-image">
+                            <h3 class="product-title">Graphic Design</h3>
+                            <p class="product-department">English Department</p>
+                            <div class="product-price">
+                                <span class="price-old">$16.48</span>
+                                <span class="price-new">$6.48</span>
+                            </div>
+                        </div>
+        
+                        <!-- Product Card 4 -->
+                        <div class="product-card">
+                            <img src="../static/img/sorvete.png" alt="Sorvete" class="product-image">
+                            <h3 class="product-title">Graphic Design</h3>
+                            <p class="product-department">English Department</p>
+                            <div class="product-price">
+                                <span class="price-old">$16.48</span>
+                                <span class="price-new">$6.48</span>
+                            </div>
+                        </div>
+        
+                        <!-- Product Card 5 -->
+                        <div class="product-card">
+                            <img src="../static/img/maca.png" alt="Maça" class="product-image">
+                            <h3 class="product-title">Graphic Design</h3>
+                            <p class="product-department">English Department</p>
+                            <div class="product-price">
+                                <span class="price-old">$16.48</span>
+                                <span class="price-new">$6.48</span>
+                            </div>
+                        </div>
+        
+                        <!-- Product Card 6 -->
+                        <div class="product-card">
+                            <img src="../static/img/frango.png" alt="Frango" class="product-image">
+                            <h3 class="product-title">Graphic Design</h3>
+                            <p class="product-department">English Department</p>
+                            <div class="product-price">
+                                <span class="price-old">$16.48</span>
+                                <span class="price-new">$6.48</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>       
+    
+    <!-- Container Roxo e Grid de Produtos -->
+    
+    <section class="productRoxo">
+        <section class="productRoxo">
+            <div class="containerRoxo">
+              <div class="imagemRoxo">
+                <img src="../static/img/roxo.png" alt="Entregador na moto" class="product-image">
+              </div>
+              <div class="rowRoxo">
+                <h2 class="product-title">MOST POPULAR</h2>
+                <p class="product-description">
+                  We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+                </p>
+                <div class="product-image-container">
+                  <img src="../static/img/carne.png" alt="Pacote de carne" class="product-main-image">
+                </div>
+                <p class="product-subtitle">English Department</p>
+                <p class="product-price">
+                  <span class="original-price">$16.48</span> <span class="discounted-price">$6.48</span>
+                </p>
+                <div class="product-benefits">
+                  <div class="benefit">
+                    <span class="benefit-number">1.</span>
+                    <p>Easy to use<br><small>Things on a very small that you have any direct</small></p>
+                  </div>
+                  <div class="benefit">
+                    <span class="benefit-number">2.</span>
+                    <p>Easy to use<br><small>Things on a very small that you have any direct</small></p>
+                  </div>
+                  <div class="benefit">
+                    <span class="benefit-number">3.</span>
+                    <p>Easy to use<br><small>Things on a very small that you have any direct</small></p>
+                  </div>
+                  <div class="benefit">
+                    <span class="benefit-number">4.</span>
+                    <p>Easy to use<br><small>Things on a very small that you have any direct</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
           
-           <div class="primary-container">
-           <div class="flex-row">
-               <div class="flex-col-lg-8 content-main">
-                   <h2 class="title-heading">FURNITURE</h2>
-                   <h6 class="second-text-color">5 itens</h6>
-                   <img src="../static/img/amarela.jpg" alt="Imagem amarela" class="card-itemImg">
-               </div>
-               <div class="flex-col-lg-8 content-main">
-                   <h3 class="title-heading">BESTSELLER PRODUCTS</h3>
-                   <!-- Mais conteúdo do card -->
-               </div>
-               <!-- Adicione mais cards conforme necessário -->
-           </div>
-
+    </section>              
+    
     </main>
 
     <!-- Rodapé -->
     <footer>
-      <div class="container">
-          <div class="layout">
-              <div class="row">
-                  <div class="text-content">
-                      <h3 class="title">Consulting Agency For Your Business</h3>
-                      <p class="subtitle">the quick fox jumps over the lazy dog</p>
-                  </div>
-                  <div class="button-layout">
-                      <button class="btn primary-color">Contact Us</button>
-                  </div>
-              </div>
-          </div>
+        <div class="container">
+            <div class="layout">
+                <div class="row">
+                    <div class="text-content">
+                        <h3 class="title">Consulting Agency For Your Business</h3>
+                        <p class="subtitle">the quick fox jumps over the lazy dog</p>
+                    </div>
+                    <div class="button-layout">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                        <button class="btn primary-color" onclick="verificarEmail()">Contact Us</button>
+                    </div>
+                    
+                </div>
+            </div>
 
-          <!-- Segundo Container -->
-          <div class="row">
-              <div class="col-md-2">
-                  <h4>Company Info</h4><br>
-                  <ul>
-                      <li>About Us</li><br>
-                      <li>Carrier</li><br>
-                      <li>We are hiring</li><br>
-                      <li>Blog</li><br>
-                  </ul>
-              </div>
-              <div class="col-md-2">
-                  <h4>Legal</h4><br>
-                  <ul>
-                      <li>About Us</li><br>
-                      <li>Carrier</li><br>
-                      <li>We are hiring</li><br>
-                      <li>Blog</li><br>
-                  </ul>
-              </div>
-              <div class="col-md-2">
-                  <h4>Features</h4><br>
-                  <ul>
-                      <li>Business Marketing</li><br>
-                      <li>User Analytic</li><br>
-                      <li>Live Chat</li><br>
-                      <li>Unlimited Support</li><br>
-                  </ul>
-              </div>
-              <div class="col-md-2">
-                  <h4>Resources</h4><br>
-                  <ul>
-                      <li>iOS & Android</li><br>
-                      <li>Watch a Demo</li><br>
-                      <li>Customers</li><br>
-                      <li>API</li><br>
-                  </ul>
-              </div>
-              <div class="col-md-4">
-                  <h4>Get In Touch</h4><br>
-                  <ul>
-                      <li><img src="../static/img/bx_bx-phone.png" alt="Phone Icon"> (480) 555-0103</li><br>
-                      <li><img src="../static/img/Vector.png" alt="Address Icon"> 4517 Washington Ave.</li><br>
-                      <li><img src="../static/img/carbon_send-alt.png" alt="Email Icon"> debra.holt@example.com</li><br>
-                  </ul>
-              </div>
-          </div>
-      </div>
-
-      <!-- Terceiro Container -->
-      <div class="container">
-          <div class="row">
+            <!-- Segundo Container -->
             <div class="row">
-              <div class="col-md-6">
-                  <h4>Made With Love By Figmaland All Right Reserved</h4>
-              </div>
-              <div class="social-icons">
-                  <a href="#" class="social-icon" aria-label="Facebook"><img src="../static/img/facebook.png" alt="Facebook"></a>
-                  <a href="#" class="social-icon" aria-label="Instagram"><img src="../static/img/instagram.png" alt="Instagram"></a>
-                  <a href="#" class="social-icon" aria-label="Twitter"><img src="../static/img/twitter.png" alt="Twitter"></a>
-              </div>
-          </div>
-      </div>
-  </footer>
+                <div class="col-md-2">
+                    <h4>Company Info</h4><br>
+                    <ul>
+                        <li>About Us</li><br>
+                        <li>Carrier</li><br>
+                        <li>We are hiring</li><br>
+                        <li>Blog</li><br>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Legal</h4><br>
+                    <ul>
+                        <li>About Us</li><br>
+                        <li>Carrier</li><br>
+                        <li>We are hiring</li><br>
+                        <li>Blog</li><br>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Features</h4><br>
+                    <ul>
+                        <li>Business Marketing</li><br>
+                        <li>User Analytic</li><br>
+                        <li>Live Chat</li><br>
+                        <li>Unlimited Support</li><br>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Resources</h4><br>
+                    <ul>
+                        <li>iOS & Android</li><br>
+                        <li>Watch a Demo</li><br>
+                        <li>Customers</li><br>
+                        <li>API</li><br>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Get In Touch</h4><br>
+                    <ul>
+                        <li><img src="../static/img/bx_bx-phone.png" alt="Phone Icon"> (480) 555-0103</li><br>
+                        <li><img src="../static/img/Vector.png" alt="Address Icon"> 4517 Washington Ave.</li><br>
+                        <li><img src="../static/img/carbon_send-alt.png" alt="Email Icon"> debra.holt@example.com</li><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-  <script src="../static/script.js"></script>
+        <!-- Terceiro Container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Made With Love By Figmaland All Right Reserved</h4>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Facebook"><img src="../static/img/facebook.png" alt="Facebook"></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><img src="../static/img/instagram.png" alt="Instagram"></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><img src="../static/img/twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../static/script.js"></script>
 </body>
 </html>

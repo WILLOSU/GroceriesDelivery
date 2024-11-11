@@ -112,3 +112,49 @@ function initCarousel() {
 
 // Inicializa o carrossel quando o DOM estiver carregado
 document.addEventListener('DOMContentLoaded', initCarousel);
+
+
+// SCRIPT MOBILE //
+// Seleciona os elementos com as classes .icons, .menu-icons e .menu-icon
+const icons = document.querySelector('.icons');
+const menuIcons = document.querySelector('.menu-icons');
+const menuIcon = document.querySelector('.menu-icons');
+
+// Função para alternar a visibilidade das classes com base na largura da tela
+function toggleMenu() {
+  if (window.innerWidth < 1328) {
+    icons.style.display = 'none'; // Oculta o .icons em telas menores que 1328px
+    menuIcons.style.display = 'flex'; // Exibe o .menu-icons em telas menores que 1328px
+    menuIcon.style.flexDirection = 'column'; // Altera o flex-direction para 'column' em telas menores que 1328px
+  } else {
+    icons.style.display = 'flex'; // Exibe o .icons em telas maiores ou iguais a 1328px
+    menuIcons.style.display = 'none'; // Oculta o .menu-icons em telas maiores ou iguais a 1328px
+    menuIcon.style.flexDirection = 'row'; // Retorna o flex-direction para 'row' em telas maiores ou iguais a 1328px
+  }
+}
+
+// Adiciona o evento de redimensionamento para verificar sempre que a janela for ajustada
+window.addEventListener('resize', toggleMenu);
+
+// Verifica o tamanho ao carregar a página pela primeira vez
+toggleMenu();
+
+
+// VALIDAÇÃO DE E-MAIL // 
+
+function validarEmail(email) {
+    // Expressão regular para validar o formato de email
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
+
+function verificarEmail() {
+    // Obtém o valor do campo de email
+    const email = document.getElementById("email").value;
+    
+    if (!validarEmail(email)) {
+        alert("Por favor, insira um endereço de email válido.");
+    } else {
+        alert("Email válido!");
+    }
+}

@@ -72,10 +72,13 @@ header {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .liHeader {
   position: relative;
+  justify-content: center;
 }
 
 .aHeader {
@@ -84,6 +87,8 @@ header {
   color: #252B42;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+  justify-content: center;
+
 }
 
 /* Estilos dos ícones */
@@ -563,56 +568,395 @@ body {
 
 /*Card Amarelo */
 
-.h5, .section-title {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.1px;
+.product-section {
+  padding-left: 220px; /* Left spacing */
+}
+
+.product-row {
+  display: flex;
+  width: 1077px; /* Hug (1,077px) */
+  height: 895px; /* Hug (895px) */
+  padding-top: 48px;
+  padding-bottom: 48px;
+  gap: 30px;
+}
+
+.sidebar {
+  position: relative;
+  width: 100%;
+  max-width: 799px; /* Tamanho da sidebar, ajustável */
+}
+
+.sidebar-image {
+  width: 389px;
+  height: 796px;
+  display: block;
+  object-fit: cover; 
+}
+
+.sidebar-content {
+  position: absolute;
+  top: 8%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: white;
   text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2, p {
+  margin: 0;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  color: #252B42;
+  margin-bottom: 10px;
+}
+
+.sidebar p {
+  color: #737373;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.sidebar-image {
+  width: 389;
+  height: 796px;
+  border-radius: 1px;
+}
+
+.main-content {
+  flex: 1;
+  width: 658px;
+  height: 799px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.nav-title {
+  font-size: 16px;
   color: #252B42;
 }
 
-.second-text-color {
+.nav-tabs {
+  display: flex;
+  right: 20px;
+  bottom: 10px;
+  left: 20px;
+  gap: 10px;
+}
+
+.nav-tab {
   color: #737373;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
+  cursor: pointer;
 }
 
-/* Container Principal e Configuração de Layout */
-.primary-container {
-  width: 100%;
-  max-width: 658px;
-  margin: 0 auto;
-  padding: 10px;
+.nav-tab.active {
+  color: #252B42;
+  font-weight: bold;
 }
 
-.flex-row {
+.nav-arrows {
   display: flex;
   gap: 10px;
-  flex-wrap: wrap; /* Torna o layout responsivo */
 }
 
-.flex-col-lg-8, .content-main {
+.nav-arrow {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ECECEC;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.product-card {
+  background: white;
+  padding: 25px;
+  text-align: center;
+}
+
+.product-image {
   width: 100%;
-  max-width: 214px; /* Fixed para content-main */
-  height: auto; /* Hug */
+  height: auto;
+  margin-bottom: 15px;
 }
 
-/* Media Queries para responsividade */
-@media (max-width: 768px) {
-  .flex-col-lg-8 {
-      width: 100%; /* Em telas menores, ocupará 100% */
+.product-title {
+  font-size: 16px;
+  color: #252B42;
+  margin-bottom: 10px;
+}
+
+.product-department {
+  font-size: 14px;
+  color: #737373;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.price-old {
+  color: #BDBDBD;
+  text-decoration: line-through;
+}
+
+.price-new {
+  color: #23856D;
+  font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .product-section {
+      padding-left: 0;
+  }
+
+  .product-row {
+      width: 100%;
+      flex-direction: column;
+      height: auto;
+          
+  }
+
+  .sidebar {
+      width: 100%;
+      margin-bottom: 30px;
+  }
+
+  
+  .product-grid {
+      grid-template-columns: repeat(2, 1fr);
   }
 }
-/* Título da seção */
-.section-title {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: #252B42;
-  width: 200px;
-  margin: 0 auto 10px auto;
+
+@media (max-width: 768px) {
+  .product-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .nav-tabs {
+      margin-top: 15px;
+  }
+
+  .nav-arrows {
+      margin-top: 15px;
+  }
 }
+
+
+/* MENU MOBILE */
+
+.menu-icon{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 10;
+  padding: 10px;
+  justify-content: row;
+  justify-content: center;
+}
+
+.menu-icon{
+  display: none;
+}
+
+/* Estilo para telas menores que 1328px */
+@media (max-width: 1328px) {
+  .menu-icons {
+    flex-direction: column; /* Alinha os itens verticalmente em telas menores */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    position: fixed; /* Fixa o menu na tela */
+    top: 50%; /* Centraliza na tela verticalmente */
+    left: 50%; /* Centraliza na tela horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste fino para centralizar */
+  }
+}
+
+@media (max-width: 960px) {
+  .menu-icon {
+     display: flex; 
+  }
+}
+
+@media (max-width: 960px) {
+  .icons {
+     display: none; 
+  }
+}
+
+/*Card roxo */
+
+/* Estilos gerais para o card roxo */
+.productRoxo {
+  width: 1440px;
+  height: 886px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Container principal do conteúdo */
+.containerRoxo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Imagem do lado esquerdo */
+.imagemRoxo {
+  width: 674px;
+  height: 649px;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Conteúdo da direita */
+.rowRoxo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  color: #FAFAFA;
+}
+
+.product-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.product-description {
+  font-size: 16px;
+  color: #FAFAFA;
+  margin-top: 10px;
+  text-align: justify; /* Justifica o texto */
+}
+
+.product-image-container {
+  margin: 20px 0;
+}
+
+.product-main-image {
+  width: 300px;
+  height: auto;
+}
+
+.product-subtitle {
+  font-weight: bold;
+}
+
+.product-price {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888888;
+}
+
+.discounted-price {
+  color: #4CAF50;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+/* Benefícios do produto */
+.product-benefits {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.benefit {
+  text-align: center;
+}
+
+.benefit-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #D32F2F;
+}
+
+.benefit p {
+  font-size: 14px;
+  color: #FAFAFA;
+  text-align: justify; /* Justifica o texto */
+  width: 150px; /* Ajusta a largura para alinhamento */
+}
+
+/* botão e-mail */
+
+  .email-label {
+      font-size: 16px;
+      color: #ffffff; /* Cor do texto do label */
+      margin-right: 10px;
+  }
+  
+  .email-input {
+      padding: 10px;
+      font-size: 16px;
+      color: #333333;
+      background-color: #f5f5f5; /* Fundo cinza claro */
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      width: 250px; /* Ajuste de largura */
+  }
+  
+  .btn.primary-color {
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px 20px;
+      background-color: #23A6F0; /* Cor primária azul */
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  
+  .btn.primary-color:hover {
+      background-color: #1a88c8; /* Cor mais escura para o hover */
+  }
+  
